@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} Third Question {% endblock %}
+
+{% block main %}
+
+<h1>Third Question</h1>
+
+<p>{{ question }}</p>
+
+<form action="/answers", method="POST">
+    <div>
+        <label for="radio1">I hate frisbees</label>
+        <input type="radio" name="answer" id="radio1" value="I Hate frisbees">
+    </div>
+    <div>
+        <label for="radio2">5 dollars</label>
+        <input type="radio" name="answer" id="radio2" value="5 dollars">
+    </div>
+    <div>
+        <label for="radio3">10 dollars</label>
+        <input type="radio" name="answer" id="radio3" value="10 dollars">
+    </div>
+    <div>
+        <label for="radio4">Whole Paycheck</label>
+        <input type="radio" name="answer" id="radio4" value="Whole Paycheck">
+    </div>
+    <button>submit</button>
+</form>
+
+
+{% endblock %}

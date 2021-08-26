@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} Fourth Question {% endblock %}
+
+{% block main %}
+
+<h1>Fourth Question</h1>
+
+<p>{{ question }}</p>
+
+<form action="/answers", method="POST">
+    <div>
+        <label for="radio1">Yes</label>
+        <input type="radio" name="answer" id="radio1" value="yes">
+    </div>
+    <div>
+        <label for="radio2">No</label>
+        <input type="radio" name="answer" id="radio2" value="no">
+    </div>
+    <button>submit</button>
+</form>
+
+{% endblock %}
