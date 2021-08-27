@@ -1,3 +1,12 @@
 h1 {
     color: darkblue;
 }
+
+.thanks-button{
+    margin-left: 2%;
+}
+
+.thanks-para {
+    display: inline-block;
+    /* margin-bottom: 2%; */
+}

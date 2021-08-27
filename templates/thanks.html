@@ -6,7 +6,15 @@
 
 <h1>Thank you for completing the survey!</h1>
 
-<p>Your answers {{  responses  }}</p>
+<h2>Here are your responses: </h2>
 
+<div id="thanks-div">
+{% for (key , val) in dct.items() %}
+<form action="">
+    <p class="thanks-para"> {{ key }} <b>{{ val }}</b> </p>
+    <button class="thanks-button">Change Answer</button>
+</form>
+{%endfor%}
+</div>
 
 {% endblock %}
